@@ -3,11 +3,10 @@ using TrilhaApiDesafio.Models;
 
 namespace TrilhaApiDesafio.Context
 {
-    public class OrganizadorContext : DbContext
+    public class AppDbContext : DbContext
     {
-        public OrganizadorContext(DbContextOptions<OrganizadorContext> options) : base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-            
         }
 
         public DbSet<Tarefa> Tarefas { get; set; }
